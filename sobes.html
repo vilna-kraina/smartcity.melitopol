@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=description content="Сайт електроних сервісів міста Мелітополь. Кабінет самообслуговування, контаку з адміністрацією та мерією міста">
+<meta name=keywords content="Smart Melitopol, SM, SmartMelitopol">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta http-equiv=X-UA-Compatible content="IE=edge, chrome=1">
+<meta name=author content=Kazadoom>
+<title>SmartMelitopol. Кабінет електронних сервісів</title>
+<link href=css/fractal.css rel=stylesheet>
+<link href=css/bootstrap.min.css rel=stylesheet>
+<script src=js/jquery.min.js></script>
+<script src=js/bootstrap.min.js></script>
+</head>
+<body>
+<div id=scheader>
+<div class=container>
+<div class=row>
+<div class=col-lg-12>
+<h5 class=pull-right>Вітаємо, <a href=#top data-toggle=modal data-target=#myModal>увійти в особистий кабінет</a>
+<a href=#top>Вийти</a>
+</h5>
+<div class="modal fade" id=myModal role=dialog>
+<div class="modal-dialog modal-sm">
+<div class=modal-content>
+<div class=modal-header>
+<button type=button class=close data-dismiss=modal>&times;</button>
+<h3>Увійти в систему</h3>
+</div>
+<div class=modal-body>
+<form class=form-inline role=form>
+<div class=form-group>
+<label for=usrname><span class="glyphicon glyphicon-user"></span> Введіть логін</label>
+<input type=email class=form-control id=email placeholder=Логін>
+</div><br>
+<div class=form-group>
+<label for=psw><span class="glyphicon glyphicon-eye-open"></span> Введіть пароль</label>
+<input type=password class=form-control id=pwd placeholder=Пароль>
+</div><br>
+<a href=/remind-password>Нагадати пароль</a><br>
+<div class="checkbox pull-right">
+<label><input type=checkbox> Запам'ятати мене</label>
+</div><br>
+</form>
+</div>
+<div class=modal-footer>
+<a class="btn btn-primary" href=registration.html>Реєстрація</a>
+<button type=submit class="btn btn-primary" data-dismiss=modal>Увійти</button>
+</div>
+</div>
+</div>
+</div>
+<a href=index.html><img src=img/logo.png alt="Кабінет електроних сервісів: SmartMelitopol" style="float:left;width:80px;height:80px;margin:10px 10px 0 0"/></a>
+<h3><p class=text-primary><b>SmartCity. <br>Кабінет електронних сервісів</b></p></h3>
+</div>
+</div>
+</div>
+</div>
+<div class=container>
+<div class=page-header>
+<ul class="nav nav-pills">
+<li><a href=concept.html>Концепція <span class=badge>1</span></a></li>
+<li class=active><a href=index.html>Проекти <span class=badge>42</span></a></li>
+<li><a href=news.html>Новини <span class=badge>0</span></a></li>
+<li><a href=http://www.mlt.gov.ua>Міська влада <span class=badge>1</span></a></li>
+<li><a href=faq.html>Допомога </a></li>
+<form class="navbar-form navbar-left pull-right" role=search>
+<div class=form-group>
+<input type=text class=form-control placeholder="Пошук сервісів">
+</div>
+<button type=submit class="btn btn-default">Пошук</button>
+</form>
+</ul>
+</div>
+<div class="alert alert-dismissible alert-danger">
+<button type=button class=close data-dismiss=alert>&times;</button>
+<strong>Увага!</strong> сторінка субсидій працює в режимі демонстрації з обмеженою функціональністю! <a href=# class=alert-link>Всі елементи сторінки знаходяться на узгодженні необхідної працездатності для подальшої розробки.</a>
+</div>
+<h2><span class="label label-info">Соціальна допомога. Субсидії</span></h2>
+<div class=panel-group id=accordion>
+<div class="panel panel-default">
+<div class=panel-heading>
+<h4 class=panel-title>
+<a data-toggle=collapse data-parent=#accordion href=#collapse1>
+<span class="glyphicon glyphicon-calendar"></span> Калькулятор субсидій</a>
+</h4>
+</div>
+<div id=collapse1 class="panel-collapse collapse">
+<div class=panel-body>
+Калькулятор буде тут.
+Принцип розрахунку субсидії взято з <a href=http://sobes.ua/ua/gazeta/blogs/entry/shcho-take-elektronna-subsidijna-sprava-ess-1>порталу соціального забезпечення України</a>. Від 28.02.2015. <br>
+Для розрухунку суми та структури субсидій заповніть наступну форму:
+<b><h3>1. Кількість зареєстрованих осіб у квартирі (будинку): </h3></b>
+Вписувати треба лише кількість <b>зареєстрованих осіб</b>, а не проживаючих в приміщенні.<br>
+<input class=form-control id=focusedInput type=text style=width:120px value>
+<b><h3>2. Заповніть сукупний щомісячний дохід всіх зареєстрованих осіб: </h3></b>
+Сукупний дохід сім’ї включає нараховану заробітну плату, пенсії, допомоги, стипендії та інші доходи, що підлягають оподаткуванню відповідно до законодавства і визначаються за даними останніх шести місяців (двох кварталів), що передують місяцю звернення за наданням субсидії. Враховується і дохід, зумовлений майновим станом. Розрахунок сукупного доходу для призначення субсидії проводиться відповідно до <a href=http://zakon5.rada.gov.ua/laws/show/z0112-02>Методики обчислення сукупного доходу сім’ї для всіх видів соціальної допомоги</a>
+<div class=row>
+<div class="col-sm-1 text-center">Січень, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Лютий, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Березень, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Квітень, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Травень, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Червень, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Липень, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Серпень, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Вересень, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Жовтень, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Листопад, 2015
+<input class=form-control id=focusedInput type=text value>
+</div>
+<div class="col-sm-1 text-center">Грудень, 2015
+<input class=form-control id=focusedInput type=text value><br>
+</div>
+</div>
+<b><h3>3. Площа приміщення: </h3></b>
+Соцiальна норма володiння чи користування загальною площею житла встановлена в розмiрi 13,65 кв. м на кожного зареєстрованого у житлi та додатково 35,22 кв. м на домогосподарство, тобто <b>48,87 кв. м на одну особу. </b>
+<input class=form-control id=focusedInput type=text style=width:120px value>
+<b><h3>4. Розмір середньомісячної плати за житлово-комунальні послуги: </h3></b>
+Включаються наступні витрати: утримання будинків та споруд та прибудинкових територій, опалення, централізоване постачання гарячої води, водовідведення гарячої води, централізоване постачання та відведення холодної води, газопостачання, електропостачання, вивезення побутових відходів.
+<input class=form-control id=focusedInput type=text style=width:120px value>
+<button type=button class="btn btn-default btn-success pull-right">Відправити</button>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class=panel-heading>
+<h4 class=panel-title>
+<a data-toggle=collapse data-parent=#accordion href=#collapse2>
+<span class="glyphicon glyphicon-list-alt"></span> Запит щодо статусу субсидій</a>
+</h4>
+</div>
+<div id=collapse2 class="panel-collapse collapse">
+<div class=panel-body>Форма запиту громадянина про субсидію</div>
+</div>
+</div>
+</div>
+<div class="well well-sm"><b>Види житлової субсидії</b></div>
+Житлова субсидія надається у вигляді безповоротної державної допомоги, а саме (відповідно до пункту1 Положення про порядок призначення та надання населенню субсидій для відшкодування витрат на оплату житлово-комунальних послуг, придбання скрапленого газу, твердого та рідкого пічного побутового палива (далі: Порядок призначення субсидій)):
+<ul>
+<li>безготівкова щомісячна субсидія на оплату частини вартості житлово-комунальних послуг;
+<li>субсидія на скраплений газ, тверде та рідке пічне побутове паливо, яка призначається та виплачується громадянам готівкою один раз в календарному році.
+</ul>
+<div class="well well-sm"><b>Куди звертатись за призначенням субсидії?</b></div>
+Житлові субсидії призначаються структурними підрозділами з питань соціального захисту населення.
+Жителі сільської місцевості можуть передати заяви з необхідними для призначення субсидій документами через уповноважених осіб, які визначаються виконавчими органами сільських і селищних рад (відповідно до пункту 3 Порядку призначення субсидій).
+<div class="well well-sm"><b>Право на житлову субсидію</b></div>
+Отримати житлову субсидію мають право громадяни, які проживають у житлових приміщеннях (будинках) (далі – житлові приміщення) будь-якої форми власності (відповідно до пункту 2 Порядку призначення субсидій).
+Субсидія призначається одному з членів домогосподарства, на якого відкрито особовий рахунок (домогосподарство - сукупність осіб (або одна особа), які зареєстровані в житловому приміщенні та які враховуються при наданні житлової субсидії) або одній із зареєстрованих у приміщенні осіб незалежно від того, чи відкриті на неї особові рахунки чи ні.
+У разі смерті особи, на яку відкрито особовий рахунок, надання субсидії не припиняється за умови, що у житловому приміщенні зареєстровані інші особи, яким нараховується плата за житлово-комунальні послуги.
+Якщо у житлових приміщеннях зареєстровані неповнолітні діти, які залишились без батьківської опіки (піклування), субсидія призначається за заявою опікуна (піклувальника) і розраховується виходячи з розміру пенсії у зв'язку з втратою годувальника та інших соціальних виплат, які отримує опікун (піклувальник) на підопічних дітей.
+Субсидія не призначається, якщо неповнолітні діти, маючи батьків, зареєстровані в житловому приміщенні (будинку) самі (Відповідно до пункту 6 Порядку призначення субсидій).
+<div class="well well-sm"><b>Розмір субсидії</b></div>
+Субсидії призначаються, якщо плата за житлово-комунальні послуги, скраплений газ, тверде та рідке пічне побутове паливо за встановленими соціальними нормами споживання (з урахуванням пільг) перевищує обсяг обов’язкового відсотка платежу (відповідно до пункту 4 Порядку призначення субсидій).
+<div class=page-header>
+</div>
+<footer>
+<div class=row>
+<div class=col-lg-12>
+<ul class="nav nav-pills">
+<li class=pull-right><a href=#top>Наверх </a></li>
+<li><a href=concept.html>Концепція </a></li>
+<li><a href=index.html>Проекти </a></li>
+<li><a href=news.html>Новини </a></li>
+<li><a href=http://www.mlt.gov.ua>Міська влада </a></li>
+<li><a href=faq.html>Допомога </a></li>
+<li><a href=support.html>Підтримка </a></li>
+</ul>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
